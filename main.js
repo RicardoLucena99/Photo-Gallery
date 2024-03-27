@@ -1,3 +1,8 @@
 $(document).ready(function() {
-  alert('Ola Jquery')
+  $('header button').click(function() {
+    alert('Expandir formulario')
+  })
+  $('form').on('submit', function(e) {
+    e.preventDefault()
+  })
 })
