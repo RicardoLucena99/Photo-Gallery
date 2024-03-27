@@ -1,6 +1,9 @@
 $(document).ready(function() {
   $('header button').click(function() {
-    alert('Expandir formulario')
+    $('form').slideDown()
+  })
+  $('#cancel-button').click(function() {
+    $('form').slideUp()
   })
   $('form').on('submit', function(e) {
     e.preventDefault()
